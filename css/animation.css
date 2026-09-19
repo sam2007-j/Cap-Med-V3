@@ -1,0 +1,47 @@
+@keyframes pulseGlow {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(0.98);
+    }
+
+    50% {
+        opacity: 0.95;
+        transform: scale(1.02);
+    }
+}
+
+.animate-pulse-glow {
+    animation: pulseGlow 3s infinite ease-in-out;
+}
+
+@keyframes rayScan {
+    0% {
+        opacity: 0.1;
+        stroke-dashoffset: 100;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.1;
+        stroke-dashoffset: 0;
+    }
+}
+
+.animate-ray {
+    stroke-dasharray: 12 6;
+    animation: rayScan 2.5s linear infinite;
+}
+
+@keyframes dashMove {
+    to {
+        stroke-dashoffset: -40;
+    }
+}
+
+.flow-line {
+    stroke-dasharray: 6 4;
+    animation: dashMove 1.5s linear infinite;
+}
