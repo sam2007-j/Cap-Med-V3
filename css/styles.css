@@ -1,0 +1,49 @@
+body {
+    background-color: #050b14;
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.glass-panel {
+    background: rgba(10, 19, 34, 0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 243, 255, 0.18);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.5),
+        inset 0 0 15px rgba(0, 243, 255, 0.03);
+}
+
+.glass-panel:hover {
+    border-color: rgba(0, 243, 255, 0.4);
+    box-shadow:
+        0 12px 40px rgba(0, 243, 255, 0.15),
+        inset 0 0 20px rgba(0, 243, 255, 0.05);
+}
+
+.text-glow-cyan {
+    text-shadow: 0 0 12px rgba(0, 243, 255, 0.6);
+}
+
+.text-glow-teal {
+    text-shadow: 0 0 12px rgba(0, 229, 163, 0.6);
+}
+
+.box-glow-cyan {
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+}
+
+.hud-grid {
+    background-size: 40px 40px;
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0, 243, 255, 0.04) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            to bottom,
+            rgba(0, 243, 255, 0.04) 1px,
+            transparent 1px
+        );
+}
